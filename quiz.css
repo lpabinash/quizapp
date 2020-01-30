@@ -1,5 +1,7 @@
 body{
     background-color: rgb(100, 175, 237);
+    overflow-x: hidden;
+    
 }
 .tag{
     color: yellow;
@@ -81,4 +83,17 @@ body{
     border-bottom: 2px solid yellow;
     
     
+}
+
+#home{
+    font-size: 100px;
+    text-align: center;
+    color:goldenrod;
+    background-image: url("https://i.ytimg.com/vi/qEUGOyjewD4/maxresdefault.jpg");
+    height:100vh;
+    background-size: 99.5% 99.5%;
+    margin:-50px;
+   
+    /* overflow: hidden; */
+    background-attachment: fixed;
 }

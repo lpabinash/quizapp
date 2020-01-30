@@ -37,7 +37,7 @@ var quizForm=document.getElementById('quizform');
 
 
 var xhttp = new XMLHttpRequest();
-xhttp.open('GET', 'https://5d76bf96515d1a0014085cf9.mockapi.io/quiz', true);
+xhttp.open('GET', 'http://5d76bf96515d1a0014085cf9.mockapi.io/quiz', true);
 xhttp.onreadystatechange = function() {
             if(this.readyState === 4) {
                     quizlistfrombackend=JSON.parse(this.responseText);
@@ -82,6 +82,9 @@ quizForm.addEventListener('submit',function(e){
         }
       }
       var resultPage = document.getElementById('result-page');
+      resultPage.onclick=function(){
+        location.reload();
+      }
     var result = document.getElementById('result');
     result.innerText = mark + "/" + ans.length;
     resultPage.style.display = "block";
